@@ -82,6 +82,7 @@ def main():
 user:
 }
 """
+    st.session_state.messages.append(HumanMessage(content=nazenaze_prompt))
 
     # Monitor user input
     if user_input := st.chat_input("何がありましたか？:"):
